@@ -1,0 +1,13 @@
+@use "@/globalStyles/variables" as *;
+
+.navigation__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  a {
+    color: $dark-color;
+    font-size: 1.0125rem;
+    font-weight: 500;
+    line-height: 21.6px;
+  }
+}

@@ -1,0 +1,82 @@
+@use "@/globalStyles/variables" as *;
+
+.hero {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 175px;
+}
+.hero__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  h1,
+  h2 {
+    margin: 0px;
+    color: $dark-color;
+  }
+  h1 {
+    width: 661px;
+    height: 150px;
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 50px;
+    span {
+      color: $blue-color;
+    }
+  }
+  h2 {
+    width: 600px;
+    height: 87px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 29px;
+  }
+}
+.hero__buttons-container {
+  display: flex;
+  gap: 22px;
+}
+.hero__button {
+  border: none;
+  padding: 15px 60px;
+  border-radius: 10px;
+  font-family: $font-inter;
+  font-size: 0.95625rem;
+  font-weight: 600;
+  line-height: 27.9px;
+  cursor: pointer;
+  &:first-child {
+    background-color: $blue-color;
+    color: #fff;
+  }
+  &:last-child {
+    border: 2px solid #4064d5;
+    background-color: #fff;
+    color: $blue-color;
+  }
+}
+.hero__image-container {
+  position: relative;
+}
+.hero__image {
+  z-index: 5;
+  position: relative;
+}
+.background-letter {
+  font-size: 435px;
+  font-weight: 700;
+  line-height: 698px;
+  color: #4064d5;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.06;
+  &:first-child {
+    top: -150px;
+  }
+  &:first-child + h1 {
+    top: -70px;
+    right: 0px;
+  }
+}
