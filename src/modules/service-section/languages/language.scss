@@ -1,0 +1,55 @@
+@use "@/globalStyles/variables" as *;
+
+.language__header {
+  display: flex;
+  gap: 110px;
+  h3 {
+    width: 540px;
+    font-size: 2.74375rem;
+    font-weight: 600;
+    line-height: 53px;
+    color: $dark-color;
+    span {
+      color: $blue-color;
+    }
+  }
+}
+.language__header-inner-wrapper {
+  display: inline-flex;
+  gap: 28px;
+  h2,
+  p {
+    color: $blue-color;
+    opacity: 0.05;
+  }
+  h2 {
+    margin-top: -30px;
+    font-size: 145px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 2.96875rem;
+    font-weight: 600;
+    line-height: 65px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+  }
+}
+
+.language__list-wrapper {
+  margin-top: 70px;
+}
+.language__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 16px;
+  list-style: inside;
+  list-style-type: circle;
+  li {
+    width: 270px;
+    font-size: 0.99375rem;
+    font-weight: 400;
+    line-height: 18px;
+    color: $dark-color;
+  }
+}

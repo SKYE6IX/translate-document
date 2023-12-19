@@ -1,4 +1,5 @@
-import Card from "./card";
+import Card from "./card/card";
+import Languages from "./languages/language";
 import serviceImageOne from "./asset/service-image-1.png";
 import serviceImageTwo from "./asset/service-image-2.png";
 import serviceImageThree from "./asset/service-image-3.png";
@@ -56,6 +57,9 @@ export default function Service() {
       </h2>
       <div className="service__lists">
         <Card serviceList={serviceList} />
+      </div>
+      <div className="service__languages">
+        <Languages />
       </div>
     </div>
   );
