@@ -1,0 +1,57 @@
+@use "@/globalStyles/variables" as *;
+
+.about-us {
+  width: 100%;
+  background: #f6f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.about-us__image {
+  border-radius: 10px;
+  img {
+    border-radius: inherit;
+  }
+}
+.about-us__title {
+  font-size: 2.74375rem;
+  font-weight: 600;
+  line-height: 58.5px;
+  color: $blue-color;
+}
+.about-us__text {
+  width: 958px;
+  font-size: 1.2375rem;
+  font-weight: 400;
+  line-height: 25.74px;
+  color: $dark-color;
+  text-align: center;
+}
+.about-us__point {
+  display: flex;
+  gap: 40px;
+}
+
+.about__us__point-list {
+  width: 360px;
+  height: 250px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  h5 {
+    font-size: 1.5375rem;
+    font-weight: 600;
+    line-height: 37.8px;
+    color: $blue-color;
+  }
+  p {
+    font-size: 0.975rem;
+    font-weight: 400;
+    line-height: 27.9px;
+    color: $dark-color;
+  }
+}

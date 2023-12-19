@@ -1,6 +1,7 @@
 import Header from "../header/header";
 import Hero from "../hero-section/hero";
 import Service from "../service-section/service";
+import AboutUs from "../about-us-section/about-us";
 import "./page.scss";
 
 export default function Page() {
@@ -9,6 +10,7 @@ export default function Page() {
       <Header />
       <Hero />
       <Service />
+      <AboutUs />
     </div>
   );
 }
