@@ -1,0 +1,25 @@
+@use "@/globalStyles/variables" as *;
+.service {
+  background-color: #f6f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px;
+  padding-top: 30px;
+}
+.service__title {
+  font-size: 2.74375rem;
+  font-weight: 600;
+  line-height: 58.5px;
+  color: $dark-color;
+  span {
+    color: $blue-color;
+  }
+}
+.service__lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
+  margin-top: 45px;
+}

@@ -1,0 +1,51 @@
+@use "@/globalStyles/variables" as *;
+
+.card {
+  width: 560px;
+  height: 703px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 72px 30px 44px 30px;
+}
+.card__title {
+  margin-top: 47px;
+  font-size: 1.5375rem;
+  font-weight: 600;
+  line-height: 37.8px;
+  color: $blue-color;
+}
+.card__lists {
+  margin-top: 16px;
+  ul {
+    list-style: inside;
+    list-style-type: circle;
+  }
+  li {
+    font-size: 0.975rem;
+    font-weight: 400;
+    line-height: 27.9px;
+    color: $dark-color;
+  }
+}
+.card__price {
+  margin-top: 37px;
+  font-size: 0.975rem;
+  font-weight: 400;
+  line-height: 27.9px;
+  color: $dark-color;
+}
+.card__button {
+  margin-top: 20px;
+  button {
+    border: none;
+    padding: 14.1px 30.63px 13.9px 31px;
+    background-color: $blue-color;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #4064d5;
+    cursor: pointer;
+  }
+}
