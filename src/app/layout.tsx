@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import YMapProvider from "@/provider/map-provider";
 import "../globalStyles/globals.scss";
 
 const inter = Inter({

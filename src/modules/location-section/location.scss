@@ -1,0 +1,27 @@
+@use "@/globalStyles/variables" as *;
+.location {
+  width: 100%;
+  height: 750px;
+  background: #e5e3df;
+}
+.address-block {
+  width: 560px;
+  background: #fff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  h3 {
+    width: 400px;
+    font-size: 1.5375rem;
+    font-weight: 600;
+    line-height: 32.76px;
+    color: $blue-color;
+  }
+  address,
+  p {
+    font-size: 0.975rem;
+    font-weight: 400;
+    line-height: 27.9px;
+  }
+}
