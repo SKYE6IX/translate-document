@@ -1,0 +1,32 @@
+.contact-us {
+  width: 100%;
+  background: #162f8a;
+  padding: 100px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-us__heading {
+  position: relative;
+  width: 570px;
+  h3 {
+    font-size: 2.74375rem;
+    font-weight: 600;
+    line-height: 60px;
+    color: rgba(246, 247, 250, 1);
+  }
+}
+.contact-us__bg-letter {
+  position: absolute;
+  font-size: 435px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0.06;
+  &:first-child {
+    top: -350px;
+  }
+  &:first-child + h1 {
+    top: -100px;
+    right: -100px;
+  }
+}
