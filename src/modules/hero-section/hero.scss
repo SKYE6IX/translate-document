@@ -34,10 +34,10 @@
     line-height: 29px;
   }
 }
-.hero__buttons-container {
-  display: flex;
-  gap: 22px;
-}
+// .hero__buttons-container {
+//   // display: flex;
+//   // gap: 22px;
+// }
 .hero__button {
   border: none;
   padding: 15px 60px;
@@ -47,15 +47,16 @@
   font-weight: 600;
   line-height: 27.9px;
   cursor: pointer;
-  &:first-child {
-    background-color: $blue-color;
-    color: #fff;
-  }
-  &:last-child {
-    border: 2px solid #4064d5;
-    background-color: #fff;
-    color: $blue-color;
-  }
+  background-color: $blue-color;
+  color: #fff;
+  // &:first-child {
+
+  // }
+  // &:last-child {
+  //   border: 2px solid #4064d5;
+  //   background-color: #fff;
+  //   color: $blue-color;
+  // }
 }
 .hero__image-container {
   position: relative;

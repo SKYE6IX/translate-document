@@ -7,7 +7,7 @@ export default function YMapsProvider({
   children: React.ReactNode;
 }) {
   return (
-    <YMaps query={{ lang: "en_RU", apikey: process.env.MAP_API_KEY }}>
+    <YMaps query={{ lang: "ru_RU", apikey: process.env.MAP_API_KEY }}>
       {children}
     </YMaps>
   );

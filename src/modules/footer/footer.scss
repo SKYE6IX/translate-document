@@ -1,0 +1,43 @@
+@use "@/globalStyles/variables" as *;
+.footer {
+  display: flex;
+  padding: 50px 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__title {
+  h3 {
+    font-size: 1.10625rem;
+    font-weight: 600;
+    line-height: 26px;
+    color: $dark-color;
+  }
+  p {
+    font-size: 0.86875rem;
+    font-weight: 400;
+    line-height: 19.2px;
+  }
+}
+.footer__button {
+  border-radius: 10px;
+  border: 2px solid $blue-color;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: $blue-color;
+  font-size: $font-inter;
+  font-size: 0.95625rem;
+  font-weight: 600;
+  line-height: 27.9px;
+  cursor: pointer;
+}
+.footer__address {
+  padding: 0px 6px 0px 30px;
+  p,
+  address {
+    font-size: 0.86875rem;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: end;
+    color: $dark-color;
+  }
+}

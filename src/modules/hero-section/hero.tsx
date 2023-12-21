@@ -18,7 +18,7 @@ export default function Hero() {
         </div>
         <div className="hero__buttons-container">
           <button className="hero__button">Заказать перевод</button>
-          <button className="hero__button">Рассчитать стоимость</button>
+          {/* <button className="hero__button">Рассчитать стоимость</button> */}
         </div>
       </div>
 
