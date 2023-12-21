@@ -1,16 +1,22 @@
 @use "@/globalStyles/variables" as *;
 .location {
   width: 100%;
-  height: 750px;
+  height: 700px;
   background: #e5e3df;
+  position: relative;
 }
 .address-block {
+  position: absolute;
   width: 560px;
   background: #fff;
   padding: 60px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
   h3 {
     width: 400px;
     font-size: 1.5375rem;
@@ -24,4 +30,9 @@
     font-weight: 400;
     line-height: 27.9px;
   }
+}
+.map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }

@@ -22,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <YMapProvider>
+        <body className={inter.className}>{children}</body>
+      </YMapProvider>
     </html>
   );
 }
