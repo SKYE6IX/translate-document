@@ -25,7 +25,7 @@ const languageList = [
 
 export default function Languages() {
   return (
-    <div className="langauge">
+    <div className="language">
       <div className="language__header">
         <h3>
           Переводим <span>на русский</span> язык <span>и наоборот</span>

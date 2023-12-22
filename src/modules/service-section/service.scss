@@ -22,6 +22,10 @@
   column-gap: 40px;
   row-gap: 40px;
   margin-top: 45px;
+  @include breakpoint(small) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .service__languages {
   width: 100%;
@@ -32,4 +36,9 @@
   padding-top: 120px;
   padding-bottom: 115px;
   margin-top: 120px;
+  @include breakpoint(small) {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }

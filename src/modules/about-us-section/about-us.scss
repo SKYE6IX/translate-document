@@ -9,11 +9,20 @@
   gap: 40px;
   padding-top: 80px;
   padding-bottom: 120px;
+  @include breakpoint(small) {
+    padding-top: 40px;
+  }
 }
 .about-us__image {
   border-radius: 10px;
   img {
     border-radius: inherit;
+  }
+  @include breakpoint(small) {
+    img {
+      width: 320px;
+      height: 120px;
+    }
   }
 }
 .about-us__title {
@@ -29,10 +38,17 @@
   line-height: 25.74px;
   color: $dark-color;
   text-align: center;
+  @include breakpoint(small) {
+    width: 335px;
+    text-align: center;
+  }
 }
 .about-us__point {
   display: flex;
   gap: 40px;
+  @include breakpoint(small) {
+    flex-direction: column;
+  }
 }
 
 .about__us__point-list {
@@ -53,5 +69,9 @@
     font-weight: 400;
     line-height: 27.9px;
     color: $dark-color;
+  }
+  @include breakpoint(small) {
+    width: 335px;
+    height: auto;
   }
 }

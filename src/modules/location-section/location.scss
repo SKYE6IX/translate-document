@@ -4,6 +4,11 @@
   height: 700px;
   background: #e5e3df;
   position: relative;
+  @include breakpoint(small) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .address-block {
   position: absolute;
@@ -30,9 +35,26 @@
     font-weight: 400;
     line-height: 27.9px;
   }
+  @include breakpoint(small) {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    gap: 15px;
+    top: 0px;
+    transform: translateY(0px);
+    left: 0px;
+    h3 {
+      width: 335px;
+    }
+  }
 }
+
 .map {
   width: 100%;
   height: 100%;
   z-index: 1;
+  @include breakpoint(small) {
+    width: 100%;
+    height: 300px;
+  }
 }

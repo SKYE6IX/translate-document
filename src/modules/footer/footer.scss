@@ -4,6 +4,12 @@
   padding: 50px 120px;
   justify-content: space-between;
   align-items: center;
+  @include breakpoint(small) {
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 0px 25px 30px;
+    align-items: flex-start;
+  }
 }
 .footer__title {
   h3 {
@@ -30,6 +36,7 @@
   line-height: 27.9px;
   cursor: pointer;
 }
+
 .footer__address {
   padding: 0px 6px 0px 30px;
   p,
@@ -39,5 +46,12 @@
     line-height: 19.2px;
     text-align: end;
     color: $dark-color;
+  }
+  @include breakpoint(small) {
+    padding: 0px;
+    p,
+    address {
+      text-align: start;
+    }
   }
 }

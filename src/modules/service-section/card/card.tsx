@@ -13,7 +13,13 @@ export default function Card({ serviceList }: { serviceList: CardData[] }) {
       {serviceList.map((list, i) => (
         <div className="card" key={i}>
           <div className="card__image">
-            <Image src={list.image_src} alt="image" width={400} height={165} />
+            <Image
+              src={list.image_src}
+              alt="image"
+              width={400}
+              height={165}
+              className="card-image"
+            />
           </div>
           <h3 className="card__title">{list.title}</h3>
           <div className="card__lists">

@@ -11,14 +11,16 @@ export default function Hero() {
             Профессиональный <span>перевод документов</span> для иностранных
             граждан в один клик
           </h1>
+          <button className="hero__button hero__button-mobile">
+            Заказать перевод
+          </button>
           <h2>
             Агентство переводов имеет офис в центре Екатеринбурга и осуществляет
             языковые переводы целого ряда документов
           </h2>
         </div>
-        <div className="hero__buttons-container">
+        <div>
           <button className="hero__button">Заказать перевод</button>
-          {/* <button className="hero__button">Рассчитать стоимость</button> */}
         </div>
       </div>
 

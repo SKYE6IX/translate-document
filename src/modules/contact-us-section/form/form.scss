@@ -11,6 +11,11 @@
   background: #fff;
   padding: 40px 45px;
   border-radius: 10px;
+  @include breakpoint(small) {
+    width: 335px;
+    padding: 20px 25px;
+    gap: 20px;
+  }
 }
 .form__title {
   @extend %shared-styles;
@@ -29,6 +34,12 @@
     font-weight: 400;
     line-height: 27px;
     color: $dark-color;
+  }
+  @include breakpoint(small) {
+    p {
+      font-size: 0.95625rem;
+      line-height: 22.95px;
+    }
   }
 }
 .form__data {
@@ -62,6 +73,17 @@
     line-height: 24px;
     color: $dark-color;
   }
+  @include breakpoint(small) {
+    label {
+      font-size: 0.9rem;
+      line-height: 21.6px;
+    }
+    input,
+    textarea {
+      font-size: 0.8rem;
+      line-height: 19.6px;
+    }
+  }
 }
 
 .form__button {
@@ -75,4 +97,8 @@
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 27px;
+  @include breakpoint(small) {
+    font-size: 0.95625rem;
+    line-height: 27.9px;
+  }
 }

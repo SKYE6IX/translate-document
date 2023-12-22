@@ -5,3 +5,14 @@ $font-inter: var(--font-inter);
 $background-color: rgba(255, 255, 255, 1);
 $dark-color: rgba(48, 50, 54, 1);
 $blue-color: rgba(64, 100, 213, 1);
+
+$breakingpoints: (
+  small: 567px,
+  medium: 1024px,
+  large: 1200px,
+);
+@mixin breakpoint($point) {
+  @media screen and (max-width: map-get($breakingpoints,$point)) {
+    @content;
+  }
+}

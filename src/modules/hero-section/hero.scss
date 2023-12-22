@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
   padding-left: 175px;
+  @include breakpoint(small) {
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
 }
 .hero__titles {
   display: flex;
@@ -33,11 +37,23 @@
     font-weight: 400;
     line-height: 29px;
   }
+  @include breakpoint(small) {
+    align-items: center;
+    h1,
+    h2 {
+      width: 320px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.75625rem;
+      line-height: 35px;
+    }
+    h2 {
+      font-size: 0.95625rem;
+      line-height: 22px;
+    }
+  }
 }
-// .hero__buttons-container {
-//   // display: flex;
-//   // gap: 22px;
-// }
 .hero__button {
   border: none;
   padding: 15px 60px;
@@ -49,23 +65,23 @@
   cursor: pointer;
   background-color: $blue-color;
   color: #fff;
-  // &:first-child {
-
-  // }
-  // &:last-child {
-  //   border: 2px solid #4064d5;
-  //   background-color: #fff;
-  //   color: $blue-color;
-  // }
+  @include breakpoint(small) {
+    display: none;
+  }
+}
+.hero__button-mobile {
+  display: block;
 }
 .hero__image-container {
   position: relative;
-  width: 583px;
-  height: 542px;
 }
 .hero__image {
   z-index: 5;
   position: relative;
+  @include breakpoint(small) {
+    width: 265.397px;
+    height: 250px;
+  }
 }
 .background-letter {
   font-size: 435px;
@@ -81,5 +97,16 @@
   &:first-child + h1 {
     top: -70px;
     right: 0px;
+  }
+  @include breakpoint(small) {
+    font-size: 241px;
+    &:first-child {
+      top: -240px;
+      left: -50px;
+    }
+    &:first-child + h1 {
+      top: -215px;
+      right: -50px;
+    }
   }
 }

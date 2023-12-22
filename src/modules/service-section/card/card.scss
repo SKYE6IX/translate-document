@@ -9,6 +9,16 @@
   background: #fff;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
   padding: 72px 30px 44px 30px;
+  @include breakpoint(small) {
+    width: 335px;
+    height: auto;
+  }
+}
+.card-image {
+  @include breakpoint(small) {
+    width: 275px;
+    height: 113px;
+  }
 }
 .card__title {
   margin-top: 47px;
@@ -16,17 +26,20 @@
   font-weight: 600;
   line-height: 37.8px;
   color: $blue-color;
+  @include breakpoint(small) {
+    margin-top: 17px;
+  }
 }
 .card__lists {
   margin-top: 16px;
   ul {
-    list-style: inside;
     list-style-type: circle;
   }
   li {
+    padding-left: 5px;
     font-size: 0.975rem;
     font-weight: 400;
-    line-height: 27.9px;
+    line-height: 26.1px;
     color: $dark-color;
   }
 }

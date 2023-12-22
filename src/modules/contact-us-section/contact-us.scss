@@ -1,3 +1,4 @@
+@use "@/globalStyles/variables" as *;
 .contact-us {
   width: 100%;
   background: #162f8a;
@@ -5,6 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include breakpoint(small) {
+    flex-direction: column;
+    padding: 60px 80px;
+    gap: 40px;
+  }
 }
 .contact-us__heading {
   position: relative;
@@ -14,6 +20,14 @@
     font-weight: 600;
     line-height: 60px;
     color: rgba(246, 247, 250, 1);
+  }
+  @include breakpoint(small) {
+    width: 335px;
+    h3 {
+      font-size: 1.61875rem;
+      line-height: 36px;
+      text-align: center;
+    }
   }
 }
 .contact-us__bg-letter {
@@ -28,5 +42,16 @@
   &:first-child + h1 {
     top: -100px;
     right: -100px;
+  }
+  @include breakpoint(small) {
+    font-size: 250px;
+    &:first-child {
+      top: -100px;
+      left: -30px;
+    }
+    &:first-child + h1 {
+      top: -50px;
+      right: -30px;
+    }
   }
 }
