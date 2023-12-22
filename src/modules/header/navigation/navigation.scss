@@ -10,4 +10,8 @@
     font-weight: 500;
     line-height: 21.6px;
   }
+  @include breakpoint(small) {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

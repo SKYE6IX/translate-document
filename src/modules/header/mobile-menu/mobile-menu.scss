@@ -1,0 +1,21 @@
+@use "@/globalStyles/variables" as *;
+
+.mobile-menu {
+  position: relative;
+}
+.mobile-menu__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  height: 400px;
+}
+.burger-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: $blue-color;
+}

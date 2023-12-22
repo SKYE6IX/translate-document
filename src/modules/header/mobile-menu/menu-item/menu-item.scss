@@ -1,0 +1,51 @@
+@use "@/globalStyles/variables" as *;
+
+%shared-styles {
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  padding: 25px;
+  position: absolute;
+  top: 50px;
+  width: 230px;
+  z-index: 15;
+  list-style: none;
+  @extend %shared-styles;
+  gap: 15px;
+}
+
+// .nav__logo {
+// }
+
+.nav__list {
+  @extend %shared-styles;
+  gap: 10px;
+  a {
+    color: $dark-color;
+    font-size: 1.0125rem;
+    font-weight: 500;
+    line-height: 21.6px;
+  }
+}
+.nav__contact {
+  p,
+  address {
+    font-size: 0.86875rem;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: $dark-color;
+  }
+}
+.nav__button {
+  border: none;
+  padding: 11.6px 33px;
+  border-radius: 10px;
+  background-color: $blue-color;
+  font-family: $font-inter;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 16.8px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
