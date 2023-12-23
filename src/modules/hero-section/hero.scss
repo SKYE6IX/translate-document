@@ -70,7 +70,10 @@
   }
 }
 .hero__button-mobile {
-  display: block;
+  display: none;
+  @include breakpoint(small) {
+    display: block;
+  }
 }
 .hero__image-container {
   position: relative;

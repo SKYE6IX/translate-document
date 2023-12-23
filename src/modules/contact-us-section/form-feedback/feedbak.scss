@@ -1,0 +1,47 @@
+@use "@/globalStyles/variables" as *;
+.progress {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.MuiCircularProgress-root {
+  width: 100px !important;
+  height: 100px !important;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.MuiAlert-root {
+  width: fit-content;
+  background-color: transparent;
+  & .MuiSvgIcon-root {
+    font-size: 100px;
+  }
+}
+.feedback__message {
+  width: 400px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: $dark-color;
+  @include breakpoint(small) {
+    width: 335px;
+  }
+}
+.feedback__button {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: $blue-color;
+  color: #fff;
+  font-family: $font-inter;
+  font-size: 1rem;
+  line-height: 21.6px;
+  font-weight: 300;
+  cursor: pointer;
+}

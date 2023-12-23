@@ -5,12 +5,14 @@
   flex-direction: column;
 }
 .form {
-  width: 650px;
   @extend %shared-styles;
+  width: 650px;
+  height: 590px;
   justify-content: center;
   background: #fff;
   padding: 40px 45px;
   border-radius: 10px;
+  position: relative;
   @include breakpoint(small) {
     width: 335px;
     padding: 20px 25px;
@@ -85,7 +87,6 @@
     }
   }
 }
-
 .form__button {
   border: none;
   padding: 15px;

@@ -2,6 +2,10 @@
 
 .mobile-menu {
   position: relative;
+  display: none;
+  @include breakpoint(small) {
+    display: block;
+  }
 }
 .mobile-menu__nav {
   position: absolute;
