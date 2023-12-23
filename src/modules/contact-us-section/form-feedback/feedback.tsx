@@ -21,10 +21,10 @@ export function FeedBack({ status, closeFeedBack }: FeedBackType) {
       <div className="feedback">
         <Alert severity="success" />
         <p className="feedback__message">
-          Thank you! We will contact you soon!
+          Спасибо! Мы свяжемся с вами в ближайшее время!
         </p>
         <button onClick={closeFeedBack} className="feedback__button">
-          Close
+          закрывать
         </button>
       </div>
     );
@@ -33,12 +33,11 @@ export function FeedBack({ status, closeFeedBack }: FeedBackType) {
       <div className="feedback">
         <Alert severity="error" />
         <p className="feedback__message">
-          We are sorry! Your request didn't go through. You can give us a call
-          yourself.
+          Мы сожалеем! Ваш запрос не прошел. Вы можете позвонить нам сами.
         </p>
         <address>1223345558</address>
         <button onClick={closeFeedBack} className="feedback__button">
-          Close
+          закрывать
         </button>
       </div>
     );

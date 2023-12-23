@@ -27,7 +27,7 @@ export const Form = () => {
   };
   const resetForm = () => {
     const blankState = Object.fromEntries(
-      Object.entries(formState).map(([key, value]: any) => [key, ""])
+      Object.entries(formState).map(([key]: any) => [key, ""])
     );
     setFormState(blankState);
   };

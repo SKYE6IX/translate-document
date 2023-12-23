@@ -1,12 +1,10 @@
 "use client";
 import Navigation from "./navigation/navigation";
-import useCurrentWidth from "./use-window-size";
 import MobileMenu from "./mobile-menu/mobile-menu";
 import Button from "../button/button";
 import "./header.scss";
 
 export default function Header() {
-  const { width } = useCurrentWidth();
   return (
     <>
       <MobileMenu />
