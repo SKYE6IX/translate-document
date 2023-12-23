@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Button from "@/modules/button/button";
 import "./card.scss";
 
 interface CardData {
@@ -30,8 +31,8 @@ export default function Card({ serviceList }: { serviceList: CardData[] }) {
             </ul>
           </div>
           <p className="card__price">Средняя стоимость: от 300 рублей</p>
-          <div className="card__button">
-            <button>Заказать перевод</button>
+          <div className="card__button-wrapper">
+            <Button className="card__button" />
           </div>
         </div>
       ))}

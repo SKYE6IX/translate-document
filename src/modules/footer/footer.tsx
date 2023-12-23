@@ -1,3 +1,4 @@
+import Button from "../button/button";
 import "./footer.scss";
 export default function Footer() {
   const year = new Date().getFullYear().toString();
@@ -8,7 +9,7 @@ export default function Footer() {
         <p>Все права защищены, {year}</p>
       </div>
       <div>
-        <button className="footer__button">Заказать перевод</button>
+        <Button className="footer__button" />
       </div>
       <div className="footer__address">
         <p>г.Екатеринбург</p>

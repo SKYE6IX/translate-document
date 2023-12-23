@@ -1,0 +1,13 @@
+@use "@/globalStyles/variables" as *;
+
+.button {
+  border: none;
+  border-radius: 10px;
+  font-family: $font-inter;
+  font-size: 0.95625rem;
+  font-weight: 600;
+  line-height: 27.9px;
+  cursor: pointer;
+  background-color: $blue-color;
+  color: #fff;
+}

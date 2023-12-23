@@ -2,6 +2,7 @@
 import Navigation from "./navigation/navigation";
 import useCurrentWidth from "./use-window-size";
 import MobileMenu from "./mobile-menu/mobile-menu";
+import Button from "../button/button";
 import "./header.scss";
 
 export default function Header() {
@@ -16,7 +17,7 @@ export default function Header() {
           <p>г.Екатеринбург</p>
           <address>+7 932 609 90 99</address>
         </div>
-        <button className="header__button">Заказать перевод</button>
+        <Button className="header__button " />
       </header>
     </>
   );

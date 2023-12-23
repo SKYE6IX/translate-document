@@ -1,7 +1,8 @@
 "use client";
 import * as React from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import Button from "@/modules/button/button";
 import "./menu-item.scss";
 
 const listVariants = {
@@ -29,10 +30,10 @@ const listContainerVariants = {
   },
 };
 const navLists = [
-  { name: "Услуги и цены", href: "#" },
-  { name: "Акции", href: "#" },
-  { name: "О нас", href: "#" },
-  { name: "Контакты", href: "#" },
+  { name: "Услуги и цены", href: "service" },
+  { name: "Акции", href: "languages" },
+  { name: "О нас", href: "about_us" },
+  { name: "Контакты", href: "contact" },
 ];
 
 export default function MenuItem({ isOpen }: { isOpen: boolean }) {
@@ -42,7 +43,9 @@ export default function MenuItem({ isOpen }: { isOpen: boolean }) {
       <div className="nav__list">
         {navLists.map((list, i) => (
           <motion.li key={i} variants={listVariants}>
-            <Link href={list.href}>{list.name}</Link>
+            <Link to={list.href} smooth={true} offset={50} spy={true}>
+              {list.name}
+            </Link>
           </motion.li>
         ))}
       </div>
@@ -52,7 +55,7 @@ export default function MenuItem({ isOpen }: { isOpen: boolean }) {
             <p>г.Екатеринбург</p>
             <address>+7 932 609 90 99</address>
           </div>
-          <button className="nav__button">Заказать перевод</button>
+          <Button className="nav__button" />
         </>
       )}
     </motion.ul>

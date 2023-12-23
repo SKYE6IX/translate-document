@@ -4,11 +4,12 @@
   display: flex;
   gap: 30px;
   list-style: none;
-  a {
+  li {
     color: $dark-color;
     font-size: 1.0125rem;
     font-weight: 500;
     line-height: 21.6px;
+    cursor: pointer;
   }
   @include breakpoint(small) {
     flex-direction: column;

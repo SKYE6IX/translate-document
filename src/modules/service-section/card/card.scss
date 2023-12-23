@@ -50,15 +50,9 @@
   line-height: 27.9px;
   color: $dark-color;
 }
-.card__button {
+.card__button-wrapper {
   margin-top: 20px;
-  button {
-    border: none;
+  & .card__button {
     padding: 14.1px 30.63px 13.9px 31px;
-    background-color: $blue-color;
-    color: #fff;
-    border-radius: 10px;
-    border: 1px solid #4064d5;
-    cursor: pointer;
   }
 }

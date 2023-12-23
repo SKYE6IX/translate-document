@@ -1,3 +1,5 @@
+"use client";
+import { Element } from "react-scroll";
 import Card from "./card/card";
 import Languages from "./languages/language";
 import serviceImageOne from "./asset/service-image-1.png";
@@ -48,7 +50,6 @@ const serviceList = [
     lists: ["Нотариальный перевод личных и корпоративных документов"],
   },
 ];
-
 export default function Service() {
   return (
     <div className="service">
@@ -58,6 +59,7 @@ export default function Service() {
       <div className="service__lists">
         <Card serviceList={serviceList} />
       </div>
+      <Element name="languages" />
       <div className="service__languages">
         <Languages />
       </div>

@@ -1,5 +1,6 @@
-import "./contact-us.scss";
 import { Form } from "./form/form";
+import "./contact-us.scss";
+
 export default async function ContactUs() {
   return (
     <div className="contact-us">
