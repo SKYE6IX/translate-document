@@ -8,6 +8,10 @@
 .MuiCircularProgress-root {
   width: 100px !important;
   height: 100px !important;
+  @include breakpoint(small) {
+    width: 50px !important;
+    height: 50px !important;
+  }
 }
 .feedback {
   display: flex;
@@ -17,9 +21,12 @@
 }
 .MuiAlert-root {
   width: fit-content;
-  background-color: transparent;
+  background-color: transparent !important;
   & .MuiSvgIcon-root {
     font-size: 100px;
+    @include breakpoint(small) {
+      font-size: 50px;
+    }
   }
 }
 .feedback__message {
@@ -30,7 +37,18 @@
   line-height: 21.6px;
   color: $dark-color;
   @include breakpoint(small) {
-    width: 335px;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+}
+.feedback__number {
+  font-size: 1rem;
+  color: $dark-color;
+  line-height: 21.6px;
+  @include breakpoint(small) {
+    font-size: 0.8rem;
+    line-height: 18px;
   }
 }
 .feedback__button {

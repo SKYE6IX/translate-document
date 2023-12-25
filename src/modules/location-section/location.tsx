@@ -7,8 +7,10 @@ export default function Location() {
       <div className="address-block">
         <h3>Наш офис находится рядом с Миграционный центр или УФМС</h3>
         <div className="address-block__contacts">
-          <address>+7 932 609 90 99</address>
-          <p>agentstvo.perevodov@bk.ru</p>
+          <a href="tel:+79326099099">+7 932 609 90 99</a>
+          <a href="mailto:agentstvo.perevodov@bk.ru">
+            agentstvo.perevodov@bk.ru
+          </a>
         </div>
         <div className="address-block__addresses">
           <p>г.Екатеринбург</p>

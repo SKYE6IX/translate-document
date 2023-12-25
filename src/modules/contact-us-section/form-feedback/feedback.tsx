@@ -35,7 +35,9 @@ export function FeedBack({ status, closeFeedBack }: FeedBackType) {
         <p className="feedback__message">
           Мы сожалеем! Ваш запрос не прошел. Вы можете позвонить нам сами.
         </p>
-        <address>1223345558</address>
+        <a className="feedback__number" href="tel:+79326099099" target="_blank">
+          Tel: +7 932 609 90 99
+        </a>
         <button onClick={closeFeedBack} className="feedback__button">
           закрывать
         </button>

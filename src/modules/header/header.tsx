@@ -17,7 +17,9 @@ export default function Header() {
         <Navigation />
         <div className="header__contact">
           <p>г.Екатеринбург</p>
-          <address>+7 932 609 90 99</address>
+          <a href="tel:+79326099099" target="_blank">
+            +7 932 609 90 99
+          </a>
         </div>
         <Button className="header__button " />
       </header>
