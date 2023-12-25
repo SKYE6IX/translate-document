@@ -38,6 +38,9 @@
   line-height: 25.74px;
   color: $dark-color;
   text-align: center;
+  strong {
+    color: $blue-color;
+  }
   @include breakpoint(small) {
     width: 335px;
     text-align: center;
@@ -50,7 +53,6 @@
     flex-direction: column;
   }
 }
-
 .about__us__point-list {
   width: 360px;
   height: 250px;
