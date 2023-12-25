@@ -1,6 +1,5 @@
 "use client";
 import * as React from "react";
-import { useRouter } from "next/navigation";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
@@ -24,7 +23,6 @@ export default function SpeedDialButton() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const router = useRouter();
 
   const handleClick = (link: string) => {
     const newWindow = window.open(link, "_blank", "noopener,noreferrer");
