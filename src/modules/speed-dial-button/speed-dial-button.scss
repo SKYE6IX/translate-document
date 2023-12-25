@@ -1,0 +1,22 @@
+@use "@/globalStyles/variables" as *;
+
+.speed-dial-button {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 50;
+  @include breakpoint(small) {
+    right: 10px;
+    bottom: 20px;
+  }
+}
+.MuiSpeedDial-root {
+  & .MuiButtonBase-root {
+    width: 70px;
+    height: 70px;
+    @include breakpoint(small) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
