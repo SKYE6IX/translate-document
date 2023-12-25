@@ -5,10 +5,18 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 30px 20px;
+  padding: 20px 20px;
   @include breakpoint(small) {
     display: none;
   }
+}
+.header__logo {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__contact {
   padding: 0px 6px 0px 30px;

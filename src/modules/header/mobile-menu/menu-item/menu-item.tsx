@@ -2,7 +2,9 @@
 import * as React from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Button from "@/modules/button/button";
+import logo from "../../asset/company-logo.jpeg";
 import "./menu-item.scss";
 
 const listVariants = {
@@ -39,7 +41,11 @@ const navLists = [
 export default function MenuItem({ isOpen }: { isOpen: boolean }) {
   return (
     <motion.ul variants={listContainerVariants} className="nav">
-      {isOpen && <div className="nav__logo">Logo And Name</div>}
+      {isOpen && (
+        <div className="nav__logo">
+          <Image src={logo} alt="company-logo" width={120} height={120} />
+        </div>
+      )}
       <div className="nav__list">
         {navLists.map((list, i) => (
           <motion.li key={i} variants={listVariants}>

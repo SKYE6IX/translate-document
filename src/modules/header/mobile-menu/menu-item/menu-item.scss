@@ -14,10 +14,14 @@
   @extend %shared-styles;
   gap: 15px;
 }
-
-// .nav__logo {
-// }
-
+.nav__logo {
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav__list {
   @extend %shared-styles;
   gap: 10px;

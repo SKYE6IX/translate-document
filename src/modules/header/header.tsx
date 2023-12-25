@@ -1,7 +1,9 @@
 "use client";
+import Image from "next/image";
 import Navigation from "./navigation/navigation";
 import MobileMenu from "./mobile-menu/mobile-menu";
 import Button from "../button/button";
+import logo from "./asset/company-logo.jpeg";
 import "./header.scss";
 
 export default function Header() {
@@ -9,7 +11,9 @@ export default function Header() {
     <>
       <MobileMenu />
       <header className="header-large">
-        <div className="header__logo">Logo And Name</div>
+        <div className="header__logo">
+          <Image src={logo} alt="company-logo" width={190} height={190} />
+        </div>
         <Navigation />
         <div className="header__contact">
           <p>г.Екатеринбург</p>
