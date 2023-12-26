@@ -8,10 +8,16 @@ $blue-color: rgba(64, 100, 213, 1);
 $breakingpoints: (
   small: 567px,
   medium: 850px,
-  large: 1200px,
+  large: 1025px,
 );
 @mixin breakpoint($point) {
   @media screen and (max-width: map-get($breakingpoints,$point)) {
+    @content;
+  }
+}
+
+@mixin min-max-breakpoint($from, $to) {
+  @media only screen and (min-width: $from) and (max-width: $to) {
     @content;
   }
 }
