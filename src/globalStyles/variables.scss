@@ -15,7 +15,6 @@ $breakingpoints: (
     @content;
   }
 }
-
 @mixin min-max-breakpoint($from, $to) {
   @media only screen and (min-width: $from) and (max-width: $to) {
     @content;

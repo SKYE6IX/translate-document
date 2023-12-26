@@ -5,7 +5,7 @@ import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import EmailIcon from "@mui/icons-material/Email";
 import "./speed-dial-button.scss";
 
 const actions = [
@@ -14,8 +14,12 @@ const actions = [
     name: "WhatApp",
     href: "https://wa.me/message/KBKPL227DESNB1",
   },
-  { icon: <TelegramIcon />, name: "Telegram", href: "" },
-  { icon: <InstagramIcon />, name: "Instagram", href: "" },
+  {
+    icon: <TelegramIcon />,
+    name: "Telegram",
+    href: "https://t.me/perevodchikk1",
+  },
+  { icon: <EmailIcon />, name: "Email", href: "mailto:perevodchikk@bk.ru" },
   { icon: <VkIcon />, name: "Vk", href: "https://vk.com/perevodchikk1" },
 ];
 
