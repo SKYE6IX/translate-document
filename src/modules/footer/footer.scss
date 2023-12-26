@@ -4,12 +4,15 @@
   padding: 50px 120px;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  @include breakpoint(medium) {
+    padding: 15px;
+  }
   @include breakpoint(small) {
     flex-direction: column;
     gap: 10px;
     padding: 25px 0px 25px 30px;
     align-items: flex-start;
-    overflow: hidden;
   }
 }
 .footer__title {

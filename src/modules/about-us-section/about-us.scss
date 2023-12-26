@@ -9,7 +9,7 @@
   gap: 40px;
   padding-top: 80px;
   padding-bottom: 120px;
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     padding-top: 40px;
   }
 }
@@ -17,6 +17,12 @@
   border-radius: 10px;
   img {
     border-radius: inherit;
+  }
+  @include breakpoint(medium) {
+    img {
+      width: 459px;
+      height: 198px;
+    }
   }
   @include breakpoint(small) {
     img {
@@ -41,6 +47,10 @@
   strong {
     color: $blue-color;
   }
+  @include breakpoint(medium) {
+    width: 556px;
+    text-align: center;
+  }
   @include breakpoint(small) {
     width: 335px;
     text-align: center;
@@ -49,7 +59,7 @@
 .about-us__point {
   display: flex;
   gap: 40px;
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     flex-direction: column;
   }
 }
@@ -71,6 +81,10 @@
     font-weight: 400;
     line-height: 27.9px;
     color: $dark-color;
+  }
+  @include breakpoint(medium) {
+    width: 600px;
+    height: auto;
   }
   @include breakpoint(small) {
     width: 335px;

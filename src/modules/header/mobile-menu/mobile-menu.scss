@@ -3,7 +3,7 @@
 .mobile-menu {
   position: relative;
   display: none;
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     display: block;
   }
 }

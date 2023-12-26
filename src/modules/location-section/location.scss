@@ -4,6 +4,9 @@
   height: 700px;
   background: #e5e3df;
   position: relative;
+  @include breakpoint(medium) {
+    height: 500px;
+  }
   @include breakpoint(small) {
     height: auto;
     display: flex;
@@ -28,6 +31,14 @@
     font-weight: 600;
     line-height: 32.76px;
     color: $blue-color;
+  }
+  @include breakpoint(medium) {
+    width: 420px;
+    padding: 20px;
+    gap: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
   }
   @include breakpoint(small) {
     position: relative;

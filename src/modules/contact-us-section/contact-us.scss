@@ -6,11 +6,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  @include breakpoint(medium) {
+    flex-direction: column;
+    gap: 40px;
+  }
   @include breakpoint(small) {
     flex-direction: column;
     padding: 60px 20px;
     gap: 40px;
-    overflow: hidden;
   }
 }
 .contact-us__heading {
@@ -21,6 +25,11 @@
     font-weight: 600;
     line-height: 60px;
     color: rgba(246, 247, 250, 1);
+  }
+  @include breakpoint(medium) {
+    h3 {
+      text-align: center;
+    }
   }
   @include breakpoint(small) {
     width: 335px;
@@ -43,6 +52,17 @@
   &:first-child + h1 {
     top: -100px;
     right: -100px;
+  }
+  @include breakpoint(medium) {
+    font-size: 350px;
+    &:first-child {
+      top: -160px;
+      left: -30px;
+    }
+    &:first-child + h1 {
+      top: -100px;
+      right: -20px;
+    }
   }
   @include breakpoint(small) {
     font-size: 250px;
